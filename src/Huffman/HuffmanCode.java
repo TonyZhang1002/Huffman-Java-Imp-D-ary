@@ -124,9 +124,22 @@ public class HuffmanCode {
       List<Map<String, Double>> getList = buildHuffmanTree(map, 2);
 
       // You can also inspect different layers' situations here
-//      for (Map.Entry<String, Double> entry : getList.get(0).entrySet()) {
-//         System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+//      List<String> keys = new ArrayList<>();
+//      List<Double> values = new ArrayList<>();
+//      for (Map.Entry<String, Double> entry : getList.get(3).entrySet()) {
+//         keys.add(entry.getKey());
+//         values.add(entry.getValue());
 //      }
+//      System.out.println("=========================================");
+//      for (String key: keys) {
+//         System.out.print("||  " + key + "\t\t\t");
+//      }
+//      System.out.println("||");
+//      for (Double value: values) {
+//         System.out.print("||  " + Double.toString(value) + "\t");
+//      }
+//      System.out.println("||");
+//      System.out.println("=========================================");
 
       // Print out the final results
       System.out.println(encode(getList));
